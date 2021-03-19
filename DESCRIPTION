@@ -1,15 +1,24 @@
-Package: ScheduledCommitAction
-Title: Running R Scripts on a Schedule with GitHub Actions
-Version: 1.0.0
-Authors@R: 
-    person(given = "Simon",
-           family = "Couch",
-           role = c("aut", "cre"),
-           email = "simonpatrickcouch@gmail.com")
-Description: Contains an example repository for running R scripts on a schedule
-    and commiting their results. See the accompanying blog post!
-License: MIT + file LICENSE
+Package: powerRankings
+Type: Package
+Title: Calculate NHL Power Rankings
+Version: 0.1.0
+Author: Jeff Hoover
+Maintainer: Jeff Hoover <jhoover4@ku.edu>
+Description: This package calculates the NHL power rankings based on each team's point total, strength of schedule, and recent performances up to this point of the season as well as the strength of the remaining schedule. The power rankings are scheduled to be updated daily to allow for the most up-to-date rankings possible. 
+Depends:
+  R (>= 3.5.0)
+Imports:
+  dplyr (>= 1.0.2),
+  fs (>= 1.5.0),
+  glue (>= 1.4.2),
+  here (>= 0.1),
+  magrittr (>= 2.0.1),
+  rvest (>= 1.0.0),
+  tibble (>= 3.1.0),
+  tidyverse (>= 1.3.0),
+  writexl (>= 1.3.1),
+  xml2 (>= 1.3.2)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
